@@ -12,11 +12,20 @@ print("hello there "+ user_name +"!")
 
 
 # generate a random number
-number=randint(10, 50)
+random_number=randint(10, 50)
 
 counter=0
 while counter < 6:
     user_number=eval(input("Enter a number:"))
+    counter=counter +1
+
+    if user_number < random_number:
+        print("your guess is too low")
+    elif user_number > random_number:
+        print("your guess is too high")
+    elif user_number==random_number:
+        print("you won!")
+        break.
 
 
 # using a while loop check if user input is equal to generated number
