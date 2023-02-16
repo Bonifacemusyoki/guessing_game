@@ -24,8 +24,13 @@ while counter < 6:
     elif user_number > random_number:
         print("your guess is too high")
     elif user_number==random_number:
-        print("you won!")
-        break.
+        break
+
+if user_number==random_number:
+    print("you win!")
+else:
+
+ print("Game over! the correct number was" ,random_number)
 
 
 # using a while loop check if user input is equal to generated number
